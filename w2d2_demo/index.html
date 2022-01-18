@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Brandon">
+    <meta name="description" content="W2D2 Demo">
+    <title>W2 | Demo</title>
+    <!--in document styling in CSS-->
+    <style>
+        /*must write with CSS syntax in here*/
+
+        /*Selecting in CSS and JavaScript: Select specific element(s) on a page:
+            *by Element type         ex:body, div, p
+            *by Id attribute         ex:Wrapper, nav, footer
+            *by Class attribute      ex: Coming in Week 3
+        */
+
+        div { /*applies to all divs in the page */
+            border:1px solid black;
+            padding:10px; /*adds 10px of space all 4 sides inbetween content and the border*/
+            margin:5px; /*adds 5px of space between objects*/
+
+        }
+
+        #wrapper {/* # specifies ID name, only applies to single element with that ID*/
+            background-color:white;
+        }
+
+        #school{
+            background-color:yellow;
+        }
+
+        #nav, #footer{
+            background-color:rgb(200,200,200);
+        }
+
+
+    </style>
+</head>
+<body>
+    
+</body style="background-color: grey;">
+
+    <div id="wrapper"><!--this is a div and "wraps around/together" all content on the page-->
+        <!--Once an ID value has been assigned, it cannot be reused-->
+        
+        <h1>Brandon Talbot</h1>
+
+        <!--Navagation-->
+        <div id="nav">
+            <!--linking to outside pages (not part of the website, they exist somewhere else online)-->
+            <!--You need the full URL-->
+            <a href="https://www.meca.edu/" target="_blank">Visit MECA</a>
+            <!--href holds the URL of website linking to-->
+
+            <!--liking to internal pages-->
+            <!--Usually you only need the URI if folder is set up correctly-->
+            <a href="page2.html" target="_blank">Visit Page 2</a>
+
+            <!--In Page "jump" links: linking to a section within the actual page itself-->
+            <a href="#bio">Bio</a>
+            <a href="#schools">Schools</a>
+            <a href="#hobbies">Hobbies</a>
+            <a href="#footer">Bottom of Page</a>
+
+
+        </div>
+
+        <!--Content / Sections-->
+        <div id="bio">
+            <h2>About Me</h2>
+
+            <p>Can a man still be brave if he's afraid? That is the only time a man can be brave. A forked purple lighting bolt, on black feild speckled with four pointed stars. WInter is coming. Get your snow gear ready!!! </p>
+
+            <!--img tags for an image content on page-->
+            <!--Use absolute path URL-->
+            <img src="https://images.theconversation.com/files/306448/original/file-20191211-95111-fbz9rf.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=1200&h=900.0&fit=crop" alt="Winter image" style="width:500px;">
+
+            <img src="images/winter_sunrise-2.jpg" alt="Winter sunrise" style="width:500px;">
+
+        </div>
+
+        <div id="schools">
+            <h2>Schooling</h2>
+            <ol>
+                <li>School 1</li>
+                <li>School 2</li>
+                <li>School 3</li>
+            </ol>
+
+        </div>
+
+        <div id="hobbies">
+            <h2>My Hobbies</h2>
+            <ul>
+                <li>hobbie 1</li>
+                <li>hobbie 2</li>
+                <li>hobbie 3</li>
+            </ul>
+
+        </div>
+
+        <!--Footer-->
+        <div id="footer">
+
+            <a href="#wrapper">Back to Top</a>
+            <a href="page2.html#footer">Page 2 Footer</a>
+            
+            <p>&copy; 2022 | B Talbot | SE111.32</p>
+           
+
+
+
+        </div>
+
+    </div>
+</html>
