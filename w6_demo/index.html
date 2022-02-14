@@ -19,6 +19,73 @@
 
         //everything insdie of <script> tags must be writeen in javascript (single line commenting)
 
+        /* I want to split some comments
+        onto multiple lines*/
+
+        //creating a varibale --> keyword "var"
+
+        var num1 //decloration only
+        num1 = 7 //once declared, value can be assigned
+
+        //combine decleration and assignment onto one line
+        var num2 = 10
+        var num3 = 7
+
+        //the vars num1, num2 and num3 cannot be used either in proccesing display conditions until they have been assigned value
+        var sum = num2 + num3
+
+        //Display data to the browser -- user can see the information
+        //alert() create a pop-up in the browser page to display data
+        //alert() --> print() / output
+        // ` ` denotes a literal string --> combines formatting from format() in python --> hold var names inside of ${var}
+        alert(`The sum is: \n\n${sum}`)
+        //escape sequences work in literL strings (\n is a new line in pop-up window)
+
+        //Display to the counsol
+        //for javascript, the consol is built into the developer tools
+        /*Accesing the developer tools
+            -F12 or right-click > interact
+            -Choose console in upper right menu panel
+            -Refresh the page
+        */
+        console.log(`The sum is: ${sum}`)
+        //console.log() primarily used for testing
+        //no physical display in page, only in the dev tools
+
+        //"Input" gaining data from browser pop-up where user enters info (not from a form)
+        //prompts user for value; script waits for the  enter key/ok button to be  initalized before moving on
+
+        prompt(`Enter your name: `)//input() in python
+        //most often we use prompt() to gain date to use
+        console.log(`we have passed the prompt()`)
+        //store data from prompt()
+        var name = prompt(`Enter your name: `)
+
+        console.log(name)
+
+        
+
+        alert(`Hello there ${name}!\nClick ok to continue.`)
+
+        var lastname = prompt(`Enter your last name: `)
+
+        var full = name + " " + lastname
+
+        console.log(full)
+
+        var num = prompt(`Enter a number to be multipled by 7: `)
+
+        var multi = num * 7
+
+        console.log(multi)//still shows numeric value
+
+        //for reference: Number()
+        //num = Number(num) --> ensures num is truly a number
+
+        console.log(`The multi value is: ${multi}`)//in console [inspect]
+        alert(`${num} * 7 = ${multi}`)//in browser pop-up
+
+
     </script>
     
 </body>
