@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Brandon Talbot">
+    <meta name="description" content="W6 HW">
+
+    <title>W6 HW | Calculator</title>
+</head>
+<body>
+
+    <h1>Week 6 Home Work: Calculator</h1>
+
+    <script>
+
+        var rate = prompt(`Enter hourly rate: `)
+        console.log(`Hourly rate: $${rate}`)
+
+        var hours = prompt(`Enter hours worked per week: `)
+        hours = Number(hours) * 2
+        console.log(`Hours worked per two weeks: $${hours}`)
+
+        var tax = 0.2
+        console.log(`Tax rate: $${tax}`)
+
+        var gross = (Number(rate) * Number(hours)).toFixed(2)
+        console.log(`Gross Pay: $${gross}`)
+
+        var taxAmount = (Number(gross) * Number(tax)).toFixed(2)
+        console.log(`Uncle Sam's Share: $${taxAmount}`)
+
+        var netpay = (Number(gross) - Number(taxAmount)).toFixed(2)
+        console.log(`Net Pay: $${netpay}`)
+
+        alert(`Gross Pay: $${gross}\n Uncle Sam's Share: $${taxAmount}\n Net Pay: $${netpay}`)
+
+    </script>
+    
+</body>
+</html>
